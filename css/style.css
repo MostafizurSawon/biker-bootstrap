@@ -16,7 +16,11 @@ header{
     color: #E0E0E0;
     font-weight: 300;
 }
-    .header-bg{
+    .nav-color{
+        color: rgb(250, 239, 239);
+    }
+
+    .header-bg, .bg-subscribe{
         background-color:#264653;
     }
         .header-h1{

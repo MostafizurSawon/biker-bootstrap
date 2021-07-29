@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Vai</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,11 +21,48 @@
 <body>
     <!-- header starts -->
     <header class="header-bg">
-        <section class="container row d-flex align-items-center py-5">
-            <div class="col-lg-6 col-md-6 col-12">
+        <!-- navbar -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light mb-4">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center col-6 col-lg-6" href="#">
+                        <i class="fas fa-motorcycle nav-color"> <span class="span-default">Biker-Vai</span></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bikes">Bikes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#review">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </li>
+                            <button class="btn btn-purchase ms-5"><i class="fas fa-sign-in-alt"> Login</i></button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container-fluid row d-flex align-items-center p-5">
+            <div class="col-lg-6 col-md-6 col-12 p-5">
                 <h6 class="header-h6">Computer-controlled digital transistorized with electronic advance</h6>
                 <h1 class="header-h1">Honda CBR 300R</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat
                     duis
                     enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <!-- Button trigger modal -->
@@ -116,7 +154,7 @@
             <h1>Fetured Bikes 2021</h1>
             <h4 style="color:#E76F51;">Best bike collection</h4>
 
-            <div class="row justify-content-between mt-5">
+            <div id="bikes" class="row justify-content-between mt-5">
                 <div class="col-12 col-md-6 col-lg-4"><img class="grayscale" src="images/feature-bike.jpg" alt=""></div>
                 <div class="col-12 col-md-6 col-lg-4"><img src="images/feature-bike.jpg" alt=""></div>
                 <div class="col-12 col-md-6 col-lg-4"><img class="grayscale" src="images/feature-bike.jpg" alt=""></div>
@@ -124,20 +162,65 @@
         </section>
 
 
+        <!-- Latest news section (optional) -->
+        <section id="service" class="client-text py-5">
+            <h1 class="mb-3">
+                Latest <span class="span-default">News</span>
+            </h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 client-review mt-3">
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/bike-1.png" class="card-img-top" alt="user">
+                        </div>
+                        <div class="card-body">
+                            <h3>Ducati XDIAVEL S-73</h3>
+                            <p class="card-text">XDiavel, the Ducati cruiser that combines the best of both worlds, is
+                                renewed, still remaining true to its philosophy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/bike-2.png" class="card-img-top" alt="user">
+                        </div>
+                        <div class="card-body">
+                            <h3>Motorbikes & Scooters</h3>
+                            <p class="card-text">While the motorcycle is a combination of motor and bicycle, the
+                                motorbike is a combo of motor and bike.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/bike-3.png" class="card-img-top" alt="user">
+                        </div>
+                        <div class="card-body">
+                            <h3>2021 Honda CBR500R</h3>
+                            <p class="card-text">Honda
+                                CBR500R is one of our most popular sportbikes. It just gets so many things right. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- client section -->
-        <section class="client-text py-5">
+        <section id="review" class="client-text py-5">
             <h1 class="mb-3">
                 Happy <span class="span-default">Clients says</span>
             </h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 client-review mt-3">
                 <div class="col">
                     <div class="card h-100 p-4">
-                        <div class="d-flex justify-content-center">
+                        <div>
                             <img src="images/user-1.png" class="w-50 card-img-top" alt="user">
                         </div>
 
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how
+                            <p class="card-text">Mostafizur helps you see how
                                 many more days you need
                                 to work to reach your financial
                                 goal for the month and year.</p>
@@ -158,15 +241,14 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 p-4">
-                        <div class="d-flex justify-content-center">
+                        <div>
                             <img src="images/user-2.png" class="w-50 card-img-top" alt="user">
                         </div>
 
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how
-                                many more days you need
-                                to work to reach your financial
-                                goal for the month and year.</p>
+                            <p class="card-text"> He is interested in the impact of digital platforms on industries and
+                                markets, and most of his work focuses on the empirical analysis of a variety of
+                                companies including Airbnb, TripAdvisor, and Expedia.</p>
                         </div>
                         <div class="star">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -185,15 +267,13 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 p-4">
-                        <div class="d-flex justify-content-center">
+                        <div>
                             <img src="images/user-3.jpg" class="rounded-client card-img-top" alt="user">
                         </div>
 
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how
-                                many more days you need
-                                to work to reach your financial
-                                goal for the month and year.</p>
+                            <p class="card-text">His research focuses on the role of firm strategy in economic policy
+                                and the economics of online platforms.</p>
                         </div>
                         <div class="star">
                             <i class="fas fa-star"></i>
@@ -262,12 +342,10 @@
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingTwo">
                                     <div class="accordion-body">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default,
-                                        until the collapse plugin adds the appropriate classes that we use to style ur
-                                        default variables. It's also worth noting that just about any HTML can go within
-                                        the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                        The general rule of thumb is to consider replacing your helmet every 3-5 years
+                                        barring that the helmet has not experienced any accidents or significant impact.
+                                        Most manufacturers and safety organizations recommend this especially if you
+                                        wear your helmet consistently.
                                     </div>
                                 </div>
                             </div>
@@ -282,12 +360,10 @@
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by
-                                        default,
-                                        until
-                                        the collapse plugin adds the appropriate classes that we use to style each
-                                        element.
-
+                                        There is no British law to compel cyclists, of any age, to wear helmets when
+                                        cycling, even though the Highway Code suggests that cyclists should wear a cycle
+                                        helmet “which conforms to current regulations, is the correct size and securely
+                                        fastened.
                                     </div>
                                 </div>
                             </div>
@@ -304,18 +380,9 @@
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by
-                                        default,
-                                        until
-                                        the collapse plugin adds the appropriate classes that we use to style each
-                                        element.
-                                        These classes control the overall appearance, as well as the showing and hiding
-                                        via
-                                        CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default
-                                        variables. It's also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                        Morning 5 AM - 8 AM is the ideal time for cycling as that is the best time when
+                                        it has the least traffic on the roads, the proper light which is required for
+                                        visibility ( in winter the starting time could be 5:30 AM ) .
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +394,7 @@
 
 
         <!-- bike preference section (bonus part-2) -->
-        <section class="client-text py-5">
+        <section id="service" class="client-text py-5">
             <h1 class="mb-3">
                 Why <span class="span-default">chose us?</span>
             </h1>
@@ -341,10 +408,8 @@
                         <div class="card-body">
 
                             <h3>Quality Service</h3>
-                            <p class="card-text">Slate helps you see how
-                                many more days you need
-                                to work to reach your financial
-                                goal for the month and year.</p>
+                            <p class="card-text">We provide the best bike service you can get. The best part is we will
+                                service free for 1st 5 years. So you don't have to worry a bit. Happy vroom vroom.</p>
                         </div>
 
                     </div>
@@ -386,10 +451,23 @@
 
             </div>
         </section>
+
+
     </main>
 
     <footer>
+        <!-- subscribe (extra-part) -->
+        <section id="subscribe" style="height:300px;"
+            class="container-fluid d-flex justify-content-center bg-subscribe align-items-center rounded-3 mt-5">
+            <div class="span-default">
+                <h3>STAY IN TOUCH WITH US.</h3>
+                <h6>Get updates on sales, specials and more</h6>
+                <br>
+                <input class="form-control" type="text">
+                <button class="btn btn-warning mt-2">SUBMIT</button>
+            </div>
 
+        </section>
     </footer>
 
     <!-- bootstrap js  -->
