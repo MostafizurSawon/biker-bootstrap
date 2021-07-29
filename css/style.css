@@ -1,0 +1,28 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+
+/* common styles and utilities */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-----------------------------
+         Main css
+    ---------------------------- */
+
+/* header css */
+header{
+    color: #E0E0E0;
+    font-weight: 300;
+}
+    .header-bg{
+        background-color:#264653;
+    }
+        .header-h1{
+            font-size: 48px;
+            color: #fff;
+        }
+        .header-h6{
+            font-size: 14px;
+        }
