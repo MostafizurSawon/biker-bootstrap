@@ -23,7 +23,7 @@
     <header class="header-bg">
         <!-- navbar -->
         <section>
-            <nav class="navbar navbar-expand-lg navbar-light mb-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top mb-4">
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center col-6 col-lg-6" href="#">
                         <i class="fas fa-motorcycle nav-color"> <span class="span-default">Biker-Vai</span></i>
@@ -36,19 +36,19 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link nav-text" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#bikes">Bikes</a>
+                                <a class="nav-link nav-text" href="#bikes">Bikes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#review">Reviews</a>
+                                <a class="nav-link nav-text" href="#review">Reviews</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#service">Services</a>
+                                <a class="nav-link nav-text" href="#service">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                                <a class="nav-link nav-text" href="#subscribe">Subscribe</a>
                             </li>
                             <button class="btn btn-purchase ms-5"><i class="fas fa-sign-in-alt"> Login</i></button>
                         </ul>
@@ -81,17 +81,17 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h4 class="text-warning">You need around 5 lac bdt to afford this!!!</h4>
+                                <h4 class="text-danger">You need around 5 lac bdt to afford this!!!</h4>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok Bye</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Ok Bye</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <img class="w-100" src="images/header-bike.png" alt="">
+            <div class="col-lg-6 col-md-6 col-12 bike-header">
+                <img class="w-100 bike" src="images/header-bike.png" alt="">
             </div>
         </section>
     </header>
@@ -303,7 +303,9 @@
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 col-12">
                     <div class="w-100 px-5">
-                        <img class="w-100 p-5" src="images/faq.png" alt="">
+                        <!-- <img class="w-100 p-5" src="images/faq.png" alt=""> -->
+            <img class="w-100 bike" src="https://64.media.tumblr.com/9e4176a7e3ba14fe8f5d314e1460fb17/tumblr_mhu37w9yUf1r3d8abo1_r1_500.gifv" alt="">
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
@@ -459,6 +461,7 @@
         <!-- subscribe (extra-part) -->
         <section id="subscribe" style="height:300px;"
             class="container-fluid d-flex justify-content-center bg-subscribe align-items-center rounded-3 mt-5">
+            
             <div class="span-default">
                 <h3>STAY IN TOUCH WITH US.</h3>
                 <h6>Get updates on sales, specials and more</h6>
